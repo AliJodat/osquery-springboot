@@ -1,6 +1,7 @@
 package dev.jodat.osqueryspringboot.config;
 
 import dev.jodat.osqueryspringboot.enums.OS;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;
@@ -17,8 +18,9 @@ public class OsQuerySchema {
     public static List<String> LINUX = new ArrayList<>();
     public static List<String> MAC = new ArrayList<>();
     public static String[] START_COMMAND = {"osqueryi", "--json"};
-    
-    static {
+
+    @Bean
+    public int initialTable() {
         List<OS> windows = List.of(OS.WINDOWS);
         List<OS> linux = List.of(OS.LINUX);
         List<OS> mac = List.of(OS.MAC);
@@ -315,7 +317,7 @@ public class OsQuerySchema {
                 WINDOWS.add(e);
             }
         });
-
+    return TABLES.size();
     }
 
 }
