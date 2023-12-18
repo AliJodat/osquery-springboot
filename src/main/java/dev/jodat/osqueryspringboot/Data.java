@@ -30,6 +30,19 @@ public class Data {
         TABLES.put("apps" , List.of(OS.MAC));
         TABLES.put("apt_sources" , List.of(OS.LINUX));
         TABLES.put("arp_cache" , List.of(OS.LINUX, OS.WINDOWS, OS.MAC));
+        TABLES.put("asl" , List.of(OS.MAC));
+        TABLES.put("atom_packages" , List.of(OS.LINUX, OS.WINDOWS, OS.MAC));
+        TABLES.put("augeas" , List.of(OS.MAC, OS.LINUX));
+        TABLES.put("authenticode" , List.of(OS.WINDOWS));
+        TABLES.put("authorization_mechanisms" , List.of(OS.MAC));
+        TABLES.put("authorizations" , List.of(OS.MAC));
+        TABLES.put("authorized_keys" , List.of(OS.MAC, OS.LINUX));
+        TABLES.put("autoexec" , List.of(OS.WINDOWS));
+        TABLES.put("azure_instance_metadata" , List.of(OS.LINUX, OS.WINDOWS, OS.MAC));
+        TABLES.put("azure_instance_tags" , List.of(OS.LINUX, OS.WINDOWS, OS.MAC));
+        TABLES.put("background_activities_moderator" , List.of(OS.WINDOWS));
+        TABLES.put("battery" , List.of(OS.MAC));
+        TABLES.put("bitlocker_info" , List.of(OS.WINDOWS));
     }
 
 }
