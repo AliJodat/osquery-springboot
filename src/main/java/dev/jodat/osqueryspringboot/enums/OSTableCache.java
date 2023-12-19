@@ -1,15 +1,13 @@
-package dev.jodat.osqueryspringboot;
+package dev.jodat.osqueryspringboot.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public enum OS {
+public enum OSTableCache {
 
-    LINUX("linux"),
-    WINDOWS("windows"),
-    MAC("mac");
+    OS_TABLE_CACHE("osTableCache");
 
     private final String value;
 
