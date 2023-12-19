@@ -17,7 +17,6 @@ public class OsQuerySchema {
     public static List<String> WINDOWS = new ArrayList<>();
     public static List<String> LINUX = new ArrayList<>();
     public static List<String> MAC = new ArrayList<>();
-    public static String[] START_COMMAND = {"osqueryi", "--json"};
 
     @Bean
     public int initialTable() {
