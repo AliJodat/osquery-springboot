@@ -1,8 +1,13 @@
 package dev.jodat.osqueryspringboot.entity.osQuery;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class User {
 
-    public static final String USER = "users";
+    public static final String TABLE = "users";
 
     private Long uid;
     private Long gid;
